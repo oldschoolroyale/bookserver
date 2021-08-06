@@ -25,4 +25,9 @@ public class AdminController {
         }
     }
 
+    @PostMapping("create")
+    public void adminCreate(@RequestBody Admin admin){
+        adminRepo.save(admin);
+    }
+
 }
